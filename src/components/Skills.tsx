@@ -4,12 +4,16 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "Python", level: 90 },
+  { name: "JavaScript", level: 85 }, 
   { name: "FastAPI", level: 80 },
   { name: "Next.js", level: 85 },
   { name: "TypeScript", level: 75 },
   { name: "TensorFlow", level: 70 },
   { name: "Tailwind CSS", level: 88 },
   { name: "Git/GitHub", level: 85 },
+  { name: "Pandas", level: 85 },
+  { name: "Excel", level: 80 },
+  { name: "Matplotlib", level: 75 },
 ];
 
 export default function Skills() {

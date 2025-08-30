@@ -10,8 +10,8 @@ import Timeline from "@/components/Timeline";
 // 👉 Update with your real links
 const LINKS = {
   github: "https://github.com/devvv180",
-  linkedin: "https://www.linkedin.com/in/YOUR-HANDLE",
-  email: "mailto:hello@devjain.xyz",
+  linkedin: "https://www.linkedin.com/in/dev-jain-44616b252/",
+  email: "mailto:devj78038@gmail.com",
   resume: "/assets/Dev_Jain_Resume.pdf",
 };
 
@@ -69,8 +69,7 @@ export default function Portfolio() {
             </span>
           </motion.h2>
           <p className="mt-4 text-gray-600 dark:text-gray-300">
-            Fresher software engineer building AI + web projects. I love clean
-            UIs, fast backends, and shipping.
+            "Computer Science fresher passionate about AI, Data Analytics, and Full-Stack Development."
           </p>
           <div className="mt-6 flex gap-4">
             <a
@@ -101,9 +100,11 @@ export default function Portfolio() {
       <section id="about" className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p className="text-gray-700 dark:text-gray-300">
-          I’m a fresher focused on AI + web. I enjoy building projects that
-          combine clean design with practical use. Currently exploring
-          real-time inference, content authenticity, and LLM tooling.
+         I am a Computer Science undergraduate with a strong passion for AI, Data Analytics, and Full-Stack Web Development. I enjoy transforming raw data into insights and building intelligent applications that solve real-world problems. Some of my key projects include a deepfake detection system, a fake news classifier, and an AI-driven stock forecasting platform.
+
+My technical toolkit includes Python, FastAPI, Next.js, React, TypeScript, TensorFlow, Tailwind CSS, and data analytics with Pandas, Matplotlib, and Excel, along with hands-on experience in cloud deployment and data visualization dashboards.
+
+I thrive on creating solutions that combine data-driven decision making, clean design, and performance optimization. Currently, I am seeking opportunities in software development, data analytics, or AI product engineering, where I can apply my skills and grow as a developer.
         </p>
       </section>
 
@@ -122,7 +123,7 @@ export default function Portfolio() {
         <p>
           Email me at{" "}
           <a href={LINKS.email} className="text-violet-600">
-            hello@devjain.xyz
+            devj78038@gmail.com
           </a>
         </p>
       </section>
