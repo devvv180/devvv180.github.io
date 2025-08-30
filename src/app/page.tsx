@@ -1,12 +1,15 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Timeline from "@/components/Timeline";
 
-// 👉 Update these with your real links
+// 👉 Update with your real links
 const LINKS = {
-  github: "https://github.com/YOUR-USERNAME",
+  github: "https://github.com/devvv180",
   linkedin: "https://www.linkedin.com/in/YOUR-HANDLE",
   email: "mailto:hello@devjain.xyz",
   resume: "/assets/Dev_Jain_Resume.pdf",
@@ -27,20 +30,22 @@ export default function Portfolio() {
       <header className="sticky top-0 z-50 border-b bg-white/70 dark:bg-gray-900/70 backdrop-blur">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="font-bold text-xl">Dev Jain</h1>
-          <nav className="flex gap-4">
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+          <nav className="flex gap-4 text-sm font-medium">
+            <a href="#projects" className="hover:text-violet-600">Projects</a>
+            <a href="#about" className="hover:text-violet-600">About</a>
+            <a href="#skills" className="hover:text-violet-600">Skills</a>
+            <a href="#experience" className="hover:text-violet-600">Experience</a>
+            <a href="#contact" className="hover:text-violet-600">Contact</a>
           </nav>
           <div className="flex gap-3">
             <a href={LINKS.github} target="_blank" rel="noreferrer">
-              <Github className="w-5 h-5" />
+              <Github className="w-5 h-5 hover:text-violet-600" />
             </a>
             <a href={LINKS.linkedin} target="_blank" rel="noreferrer">
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-5 h-5 hover:text-violet-600" />
             </a>
             <a href={LINKS.email}>
-              <Mail className="w-5 h-5" />
+              <Mail className="w-5 h-5 hover:text-violet-600" />
             </a>
           </div>
         </div>
@@ -102,26 +107,14 @@ export default function Portfolio() {
         </p>
       </section>
 
+      {/* Skills */}
+      <Skills />
+
       {/* Projects */}
-      <section id="projects" className="container mx-auto px-4 py-16">
-        <h2 className="text-2xl font-bold mb-4">Projects</h2>
-        <ul className="space-y-4">
-          <li className="border p-4 rounded-lg">
-            <h3 className="font-semibold">Fake News Classifier</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Real-time classification using FastAPI + TF-IDF + Logistic
-              Regression, with a React + Tailwind UI.
-            </p>
-          </li>
-          <li className="border p-4 rounded-lg">
-            <h3 className="font-semibold">Deepfake Detector</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Next.js + TypeScript app integrating Genkit (Gemini 2.0 Flash) to
-              analyze images/videos.
-            </p>
-          </li>
-        </ul>
-      </section>
+      <Projects />
+
+      {/* Experience */}
+      <Timeline />
 
       {/* Contact */}
       <section id="contact" className="container mx-auto px-4 py-16">
@@ -134,6 +127,7 @@ export default function Portfolio() {
         </p>
       </section>
 
+      {/* Footer */}
       <footer className="border-t py-6 text-center text-sm text-gray-500 dark:text-gray-400">
         © {new Date().getFullYear()} Dev Jain
       </footer>
