@@ -16,7 +16,7 @@ const LINKS = {
 };
 
 export default function Portfolio() {
-  const [dark, setDark] = useState(true);
+  const [dark] = useState(true);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -69,7 +69,7 @@ export default function Portfolio() {
             </span>
           </motion.h2>
           <p className="mt-4 text-gray-600 dark:text-gray-300">
-            "Computer Science fresher passionate about AI, Data Analytics, and Full-Stack Development."
+            Computer Science fresher passionate about AI, Data Analytics, and Full-Stack Development.
           </p>
           <div className="mt-6 flex gap-4">
             <a
